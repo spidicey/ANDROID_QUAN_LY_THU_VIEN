@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".intent.form.book.FormBookCreate">
+
+    <Button
+        android:id="@+id/eImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bgs_completed"
+        android:ems="10"
+        android:text="CHỌN ẢNH"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/eTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="40dp"
+        android:autofillHints=""
+        android:background="@drawable/bgv_edit_text"
+        android:hint="Tên sách"
+        android:inputType="text"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eImg" />
+
+    <AutoCompleteTextView
+        android:id="@+id/eAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="25dp"
+        android:autofillHints=""
+        android:background="@drawable/bgv_edit_text"
+        android:completionThreshold="1"
+        android:ems="10"
+        android:hint="Tác giả"
+        android:inputType="text"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eTitle" />
+
+    <AutoCompleteTextView
+        android:id="@+id/eType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/bgv_edit_text"
+        android:completionThreshold="1"
+        android:ems="10"
+        android:hint="Thể loại"
+        android:inputType="text"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eAuthor" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eType">
+
+        <EditText
+            android:id="@+id/eBookshelf"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:autofillHints=""
+            android:background="@drawable/bgv_edit_text"
+            android:gravity="center"
+            android:hint="Kệ sách"
+            android:inputType="numberSigned"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp"
+            android:textColor="@color/black"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/eBookend"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:autofillHints=""
+            android:background="@drawable/bgv_edit_text"
+            android:gravity="center"
+            android:hint="Ngăn sách"
+            android:inputType="numberSigned"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp"
+            android:textColor="@color/black"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnThem"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bgv_edit_text"
+        android:backgroundTint="@color/green"
+        android:text="XÁC NHẬN"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@id/btnHuy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <Button
+        android:id="@+id/btnHuy"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bgv_edit_text"
+        android:backgroundTint="@color/red"
+        android:text="HỦY BỎ"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/btnThem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnThem" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="164dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="IMAGE"
+        android:src="@drawable/icon_nothing"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

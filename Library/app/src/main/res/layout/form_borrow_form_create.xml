@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".intent.form.borrow_form.FormBorrowFormCreate">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/indigo"
+        android:gravity="center"
+        android:paddingVertical="10dp"
+        android:text="PHIẾU MƯỢN - TRẢ SÁCH"
+        android:textAppearance="@style/CustomTextAppearanceButton"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/ReaderAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/reader"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            app:hintTextAppearance="@style/CustomTextAppearanceTextInputLayout">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bgv_edit_text"
+                android:completionThreshold="1"
+                android:hint="Độc giả"
+                android:inputType="text"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="15dp"
+                android:textSize="16sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/btnScan"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_alignBottom="@id/reader"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="QR_SCANNER"
+            android:src="@drawable/icon_qrcode" />
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_borrow_book_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ReaderAction"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bgv_edit_text"
+        app:iconifiedByDefault="false"
+        app:queryBackground="@color/transparent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_create_borrowform"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@id/search_borrow_book_detail"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bgv_edit_text"
+        android:padding="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rcv_create_borrowform"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/bgv_button"
+            android:backgroundTint="@color/green"
+            android:text="XÁC NHẬN"
+            android:textAppearance="@style/CustomTextAppearanceButton"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bgv_button"
+            android:backgroundTint="@color/red"
+            android:text="HỦY BỎ"
+            android:textAppearance="@style/CustomTextAppearanceButton"
+            tools:ignore="ButtonStyle" />
+
+    </LinearLayout>
+
+</RelativeLayout>

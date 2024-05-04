@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mHome"
+        android:icon="@drawable/drawer_home"
+        android:title="TRANG CHỦ" />
+    <item
+        android:id="@+id/mProfile"
+        android:icon="@drawable/drawer_profile"
+        android:title="THÔNG TIN CÁ NHÂN" />
+    <item
+        android:id="@+id/mLogout"
+        android:icon="@drawable/drawer_logout"
+        android:title="ĐĂNG XUẤT" />
+</menu>

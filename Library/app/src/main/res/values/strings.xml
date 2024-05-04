@@ -1,0 +1,39 @@
+<resources>
+
+    <string name="app_name">QUẢN LÝ THƯ VIỆN</string>
+
+    <string-array name="menu_01_titles">
+        <item>QUẢN LÝ SÁCH</item>
+        <item>QUẢN LÝ ĐỘC GIẢ</item>
+    </string-array>
+
+    <array name="menu_01_images">
+        <item>@drawable/menu_01_01</item>
+        <item>@drawable/menu_01_02</item>
+    </array>
+
+    <string-array name="menu_02_titles">
+        <item>QUẢN LÝ MƯỢN - TRẢ</item>
+        <item>QUẢN LÝ PHIẾU PHẠT</item>
+        <item>QUẢN LÝ PHIẾU NHẬP</item>
+        <item>QUẢN LÝ THANH LÝ</item>
+    </string-array>
+
+    <array name="menu_02_images">
+        <item>@drawable/menu_02_01</item>
+        <item>@drawable/menu_02_02</item>
+        <item>@drawable/menu_02_03</item>
+        <item>@drawable/menu_02_04</item>
+    </array>
+
+    <string-array name="genders">
+        <item>NAM</item>
+        <item>NỮ</item>
+    </string-array>
+
+    <string-array name="user_states">
+        <item>HOẠT ĐỘNG</item>
+        <item>ĐÃ KHÓA</item>
+    </string-array>
+
+</resources>

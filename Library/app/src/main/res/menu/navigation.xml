@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mInformation"
+        android:icon="@drawable/menu_01"
+        android:title="THÔNG TIN" />
+    <item
+        android:id="@+id/mManagement"
+        android:icon="@drawable/menu_02"
+        android:title="QUẢN LÝ" />
+</menu>
